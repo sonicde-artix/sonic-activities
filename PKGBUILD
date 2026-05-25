@@ -4,7 +4,7 @@
 pkgname=sonic-activities
 pkgver=6.6.5
 _dirver=$(echo $pkgver | cut -d. -f1-3)
-pkgrel=1
+pkgrel=2
 pkgdesc='Core components for SonicDE Activities'
 arch=(x86_64)
 url='https://github.com/Sonic-DE/sonic-activities'
@@ -23,7 +23,7 @@ conflicts=(kactivities plasma-activities)
 replaces=(kactivities plasma-activities)
 provides=(plasma-activities)
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('caaceb5f1bba5d5e6c93a1a6948e55730a0ff9cfc7558f552739272fb1eb010b')
+sha256sums=('5d254c690c21da39f958a2ec8071706a30e1ab070e2080263622170e8ac5bd88')
 
 build() {
   cmake -B build  -S $pkgname-$pkgver \
